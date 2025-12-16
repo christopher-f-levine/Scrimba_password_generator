@@ -22,9 +22,19 @@ body {
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
-    border-bottom: solid gray 1px;
-    margin-bottom: 40px;
     margin-top: 30px;
+}
+
+.controls-section {
+    border-radius: 15px;
+    background-color: var(--color-bg-secondary);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin: 15px 0 15px 0;
+    padding: 10px 15px 10px 15px;
 }
 
 #generated-passwords-section {

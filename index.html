@@ -6,16 +6,42 @@
     </head>
     <body>
         <div class="page-container">
+            
             <div class="hero-section">
                 <h1 class="hero-text">Generate a</h1>
                 <h1 id="hero-text-emphasis">random password</h1>
                 <h2 id="hero-subtitle">Never use an insecure password again.</h2>
-                <button id="CTA-btn-generate-password" onclick="renderPasswords()">Generate passwords</button>
             </div>
+
+            <div class="controls-section">
+                <label class="toggle-control"> 
+                     Include numbers <input class="checkbox" type="checkbox" id="include-numbers-el">
+                </label>
+                <label class="toggle-control"> 
+                    Include special characters <input class="checkbox" type="checkbox" id="include-characters-el">
+                </label>
+                <label class="toggle-control" for="length">
+                    Password length:
+                    <output id="lengthValue">10</output> 
+                    <input
+                    type="range"
+                    class="toggle-slider"
+                    id="length"
+                    min="5"
+                    max="15"
+                    value="10"
+                    >
+                </label>
+
+
+            </div>
+            <button id="CTA-btn-generate-password" onclick="renderPasswords()">Generate passwords</button>
+
             <div id="generated-passwords-section">
                 <h3 class="generated-password-textbox" id="generated-password-1"> </h3>
                 <h3 class="generated-password-textbox" id="generated-password-2"> </h3>
             </div>
+
         </div>
         
         <script src="index.js"></script>
