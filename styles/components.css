@@ -6,7 +6,7 @@
 } 
 
 #hero-text-emphasis {
-    font-size: 44px;
+    font-size: 46px;
     color: var(--color-text-secondary);
     font-family: "Karla", sans-serif;
 }
@@ -16,16 +16,18 @@
     color: var(--color-text-muted);
     font-family: "Karla", sans-serif;
     font-weight: lighter;
+    font-size: 25px;
 }
 
 .toggle-control {
     font-size: 15px;
     font-family: "Karla", sans-serif;
     color: var(--color-text-muted);
-    margin: 10px auto 10px 0px; 
+    margin: 20px auto 20px 0px; 
 }
 
 .checkbox {
+    margin-left: 5px;
     accent-color: var(--color-text-secondary);
 }
 
