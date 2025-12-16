@@ -33,11 +33,15 @@
 
 .generated-password-textbox {
     background-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    font-family: "Karla", sans-serif;
+    font-weight: lighter;
     border: none;
     border-radius: 5px;
     min-width: 210px;
     padding: 8px 10px;
     min-height: 40px;
+    text-align: center;
 }
 
 #generated-password-1 {
