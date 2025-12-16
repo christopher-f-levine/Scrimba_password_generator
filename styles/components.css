@@ -1,0 +1,49 @@
+.hero-text {
+    color: var(--color-text-primary);
+    font-size: 44px;
+    font-family: "Karla", sans-serif;
+    margin-bottom: 0px;
+} 
+
+#hero-text-emphasis {
+    font-size: 44px;
+    color: var(--color-text-secondary);
+    font-family: "Karla", sans-serif;
+}
+
+#hero-subtitle{
+    margin-top: 5px;
+    color: var(--color-text-muted);
+    font-family: "Karla", sans-serif;
+    font-weight: lighter;
+}
+
+#CTA-btn-generate-password {
+    font-size: 20px;
+    font-family: "Karla", sans-serif;
+    background-color: var(--color-accent-primary);
+    color: var(--color-text-primary);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    align-self: flex-start;
+}
+
+.generated-password-textbox {
+    background-color: var(--color-bg-secondary);
+    border: none;
+    border-radius: 5px;
+    min-width: 210px;
+    padding: 8px 10px;
+    min-height: 40px;
+}
+
+#generated-password-1 {
+
+}
+
+#generated-password-2 {
+    
+}
