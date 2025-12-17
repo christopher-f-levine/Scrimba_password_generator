@@ -3,8 +3,7 @@ const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 const specialCharacters = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"]
 let usableCharacters = []
 
-let password1El = document.getElementById('generated-password-1')
-let password2El = document.getElementById('generated-password-2')
+let password1El = document.getElementById("generated-password-1")
 
 let includeNumbersEl = document.getElementById("include-numbers-el")
 let includeSpecialCharactersEl = document.getElementById("include-characters-el")
@@ -16,7 +15,6 @@ slider.addEventListener("input", () => {
     output.textContent = slider.value
 
   })
-
 
  output.textContent = slider.value;
 
@@ -60,8 +58,11 @@ function generateRandomPassword() {
     return password
 }
 
-function renderPasswords() {
+function renderPassword() {
     usableCharacters = determineUsableCharacters()
     password1El.textContent = generateRandomPassword()
-    password2El.textContent = generateRandomPassword()
+}
+
+function copyToClipboard() {
+    navigator.clipboard.writeText(password1El.textContent)
 }

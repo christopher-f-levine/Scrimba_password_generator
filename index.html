@@ -21,8 +21,7 @@
                     Include special characters <input class="checkbox" type="checkbox" id="include-characters-el">
                 </label>
                 <label class="toggle-control" for="length">
-                    Password length:
-                    <output id="lengthValue-el">10</output> 
+                    Password length
                     <input
                     type="range"
                     class="toggle-slider"
@@ -31,15 +30,16 @@
                     max="15"
                     value="10"
                     >
+                    <output id="lengthValue-el">  10</output>
                 </label>
 
 
             </div>
-            <button id="CTA-btn-generate-password" onclick="renderPasswords()">Generate passwords</button>
+            <button id="CTA-btn-generate-password" onclick="renderPassword()">Generate Password</button>
 
             <div id="generated-passwords-section">
                 <h3 class="generated-password-textbox" id="generated-password-1"> </h3>
-                <h3 class="generated-password-textbox" id="generated-password-2"> </h3>
+                <button id="btn-copy-to-clipboard" onclick="copyToClipboard()">Copy to Clipboard</button>
             </div>
 
         </div>
